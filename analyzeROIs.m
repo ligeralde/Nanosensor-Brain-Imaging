@@ -1,5 +1,8 @@
 function []=analyzeROIs(filetype,frameRate);
 clearvars -except filetype frameRate
+
+%test
+
 if strmatch(filetype,'spe');
     files=dir('*.spe');
 elseif strmatch(filetype,'tif');
